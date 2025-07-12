@@ -30,7 +30,8 @@ const restrictItems = value => {
   setFilteredYear(value)
   setSearchInput(value)
   if (value !== 1900) {
-    const filteredData = list.filter((book) => 
+    let filteredData;
+    filteredData = list.filter((book) => 
       book.first_publish_year > value 
     )
     setFilteredResults(filteredData)
