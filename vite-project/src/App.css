@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Bungee+Spice&family=Butterfly+Kids&family=Cedarville+Cursive&family=Creepster&family=Fredericka+the+Great&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lilita+One&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: "Creepster";
+}
+
+body{
+  background-color: rgb(77, 5, 5);
+}
+
+th{
+  text-decoration: underline;
+}
+
+#filter {
+  width: 30em;
+  margin: 20px;
+  border-radius: 5px;
+  font-family: "Creepster";
+  background-color: rgb(77, 5, 5);
+  color: white;
+}
+
+.gridItem{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#app{
+  display: grid;
+  background-color: white;
+  color: black;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 5px;
+}
+
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.slidecontainer {
+  margin: 5px;
+}
+
+/*
+Note: got this css code from the geeks for geeks article
+on slider input in html/css
+*/
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 300px; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: rgb(77, 5, 5);/* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 10px; 
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background:rgb(77, 5, 5); /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}

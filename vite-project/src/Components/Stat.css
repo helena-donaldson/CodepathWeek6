@@ -1,0 +1,22 @@
+.statContainer{
+    display: flex;
+}
+
+.individualStat{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    color: white;
+    border-radius: 5px; 
+    margin: 5px;
+}
+
+#totalNum{
+    background-color: rgb(12, 12, 65);
+}
+
+#averageYr{
+    background-color: rgb(3, 55, 18);
+}
+
+#numLang{
+    background-color: rgb(48, 8, 81);
+}
