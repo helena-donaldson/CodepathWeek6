@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react'
 import './App.css'
 import BookInfo from "./Components/BookInfo"
 import Stat from "./Components/Stat"
+import Chart from "./Components/Chart.jsx"
+import Chart2 from "./Components/Chart2.jsx"
 
 function App() {
    const [list, setList] = useState(null)
@@ -95,7 +97,7 @@ const restrictItems = value => {
             // <li key={index}>
             //   {bookData.title}
             // </li>
-            <BookInfo key={index} title={bookData.title} year={bookData.first_publish_year} languages={bookData.language.length}/>
+            <BookInfo key={index} cover_i = {bookData.cover_i} title={bookData.title} year={bookData.first_publish_year} languages={bookData.language.length}/>
             )
           ) :
           list &&
@@ -103,11 +105,17 @@ const restrictItems = value => {
             // <li key={index}>
             //   {bookData.title}
             // </li>
-            <BookInfo key={index} title={bookData.title} year={bookData.first_publish_year} languages={bookData.language.length}/>
+            <BookInfo key={index} cover_i = {bookData.cover_i} title={bookData.title} year={bookData.first_publish_year} languages={bookData.language.length}/>
             )
           )}
         </tbody>
       </table>
+      <div class="gridItem">
+        <br></br>
+      {list && <Chart list={searchInput.length > 0 ? filteredResults: list}/>}
+        <br></br>
+      {list && <Chart2 list={searchInput.length > 0 ? filteredResults: list}/>}
+      </div>
     </div>
   )
 }
