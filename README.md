@@ -7,6 +7,7 @@ Features:
 * Generates statistics about displayed Stephen King novels, including:
     * Year published
     * Languages translated into
+* Displays charts associated with above statistics as a visualization method
 * Displays cover of Stephen King novel when selected
 
-This project uses the React library with the Open Library API.
+This project uses the React library, the Open Library API, and the recharts library.
